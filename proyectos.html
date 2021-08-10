@@ -1,0 +1,272 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Celeste&Piedra</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <!-- REVOLUTION BANNER CSS SETTINGS -->
+    <link rel="stylesheet" href="assets/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="assets/revslider.css" media="screen" />
+<link rel="stylesheet" href="assets/custom-slider.css">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+ 
+  header a {
+    color: #000;
+   
+}
+header {
+   
+    top: 2rem;
+}
+</style>
+</head>
+<body>
+
+  <header>
+<a href="index.html">    <img src="assets/img/logo-black.png" alt=""></a>
+    <ul>
+      <li>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="proyectos.html">Proyectos</a>
+        <a href="noticias">Noticias</a>
+        <a href="">contacto</a>
+      </li>
+    </ul>
+  </header>
+  <section class="content-lines-wrapper">
+    <div class="content-lines-inner">
+        <div class="content-lines"></div>
+    </div>
+</section>
+
+ <section class="projects container-fluid">
+  <div class="item">
+    <div class="position-re o-hidden"> <img src="assets/img/BAHIA CALIENTE.png" alt=""> </div>
+    <div class="con">
+        <h6><a href="stonya-villa.html">Lorem</a></h6>
+        <h5><a href="stonya-villa.html">BAHÍA CALIENTE</a></h5>
+        <div class="line"></div> <a href="stonya-villa.html"><i class="ti-arrow-right"></i></a>
+    </div>
+</div>
+<div class="item">
+  <div class="position-re o-hidden"> <img src="assets/img/BAHIA CALIENTE.png" alt=""> </div>
+  <div class="con">
+      <h6><a href="stonya-villa.html">Lorem</a></h6>
+      <h5><a href="stonya-villa.html">BAHÍA CALIENTE</a></h5>
+      <div class="line"></div> <a href="stonya-villa.html"><i class="ti-arrow-right"></i></a>
+  </div>
+</div>
+<div class="item">
+  <div class="position-re o-hidden"> <img src="assets/img/BAHIA CALIENTE.png" alt=""> </div>
+  <div class="con">
+      <h6><a href="stonya-villa.html">Lorem</a></h6>
+      <h5><a href="stonya-villa.html">BAHÍA CALIENTE</a></h5>
+      <div class="line"></div> <a href="stonya-villa.html"><i class="ti-arrow-right"></i></a>
+  </div>
+</div>
+<div class="item">
+  <div class="position-re o-hidden"> <img src="assets/img/BAHIA CALIENTE.png" alt=""> </div>
+  <div class="con">
+      <h6><a href="stonya-villa.html">Lorem</a></h6>
+      <h5><a href="stonya-villa.html">BAHÍA CALIENTE</a></h5>
+      <div class="line"></div> <a href="stonya-villa.html"><i class="ti-arrow-right"></i></a>
+  </div>
+</div>
+ </section>
+
+
+<style>
+  body{
+    overflow-y: scroll;
+  }
+  .projects{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 12rem;
+    grid-gap: 2rem;
+  }
+  .projects .item img {
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+img {
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    color: #f4f4f4;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+.projects .item .con {
+    padding: 30px 15px;
+    position: absolute;
+    bottom: -58px;
+    left: 0;
+    width: 100%;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    text-align: center;
+    z-index: 20;
+    height: auto;
+    box-sizing: border-box;
+    background: -moz-linear-gradient(top, transparent 0, rgba(0, 0, 0, .1) 2%, rgba(0, 0, 0, .75) 90%);
+    background: -webkit-linear-gradient(top, transparent 0, rgba(0, 0, 0, .01) 2%, rgba(0, 0, 0, .75) 90%);
+    background: linear-gradient(to bottom, transparent 0, rgba(0, 0, 0, .01) 2%, rgba(0, 0, 0, .75) 90%);
+}
+.projects .item .con h6, .projects .item .con h6 a {
+    position: relative;
+    color: #000;
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+.projects .item .con h5, .projects .item .con h5 a {
+    position: relative;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+.projects .item .line {
+    text-align: center;
+    height: 1px;
+    width: 60px;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    margin: 0 auto 30px;
+}
+
+
+/* ======= Projects style ======= */
+.projects .item {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.projects .item:hover img {
+    -webkit-filter: none;
+    filter: none;
+    -webkit-transform: scale(1.09, 1.09);
+    transform: scale(1.09, 1.09);
+    -webkit-filter: brightness(70%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.projects .item:hover .con {
+    bottom: 0;
+}
+.projects .item img {
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+.projects .item .con {
+    padding: 30px 15px;
+    position: absolute;
+    bottom: -58px;
+    left: 0;
+    width: 100%;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    text-align: center;
+    z-index: 20;
+    height: auto;
+    box-sizing: border-box;
+    background: -moz-linear-gradient(top, transparent 0, rgba(0, 0, 0, .1) 2%, rgba(0, 0, 0, .75) 90%);
+    background: -webkit-linear-gradient(top, transparent 0, rgba(0, 0, 0, .01) 2%, rgba(0, 0, 0, .75) 90%);
+    background: linear-gradient(to bottom, transparent 0, rgba(0, 0, 0, .01) 2%, rgba(0, 0, 0, .75) 90%);
+}
+.projects .item .con h6,
+.projects .item .con h6 a {
+    position: relative;
+    color: #000;
+  
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.projects .item .con h5,
+.projects .item .con h5 a {
+    position: relative;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+.projects .item .con p {
+    color: #fff;
+    font-size: 20px;
+}
+.projects .item .con i {
+    color: #fff;
+    font-size: 20px;
+}
+.projects .item .con i:hover {
+    color: #000;
+}
+.projects .item .con .butn-light {
+    margin-left: 0;
+    border-radius: 30px;
+    border-color: #777;
+    padding: 11px 30px;
+}
+.projects .item .con .butn-light:hover {
+    border-color: #000;
+}
+/* line animation */
+.projects .item .line {
+    text-align: center;
+    height: 1px;
+    width: 60px;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    margin: 0 auto 30px;
+}
+.projects .item:hover .line {
+    width: 100%;
+    transition-property: all;
+    transition-duration: 0.8s;
+    transition-timing-function: ease-in-out;
+}
+
+</style>
+
+
+  <footer class="footer">
+    <p>  COPYRIGHT © 2021 CELESTEYPIEDRA / E-MAIL: <a href="mailto:juliana@celesteypiedra.com">juliana@celesteypiedra.com</a> / TELEFONO: <a href="tel:+573222239933"> (+57) 322 223 99 33</a> / Cra. 4 # 13 –14 Piso 4 Ed. Davivienda
+    </p>
+    </footer>
+    
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!-- REVOLUTION BANNER JS FILES  -->
+<script type="text/javascript" src="assets/plugin.min.js"></script>
+<script type="text/javascript" src="assets/revslider.min.js"></script>
+</body>
+</html>
