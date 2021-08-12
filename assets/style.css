@@ -7,6 +7,14 @@
   url("f4d849075c9b4c0047fc56a828879854.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
   url("f4d849075c9b4c0047fc56a828879854.svg#Recoleta Bold") format("svg"); /* iOS 4.1- */
 }
+@font-face {font-family: "futura-bold";
+  src: url("f4d849075c9b4c0047fc56a828879854.eot"); /* IE9*/
+  src: url("f4d849075c9b4c0047fc56a828879854.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("/Recoleta/RecoletaAlt-Black.woff2") format("woff2"), /* chrome、firefox */
+  url("./fonts/Futura-Bold.woff") format("woff"), /* chrome、firefox */
+  url("f4d849075c9b4c0047fc56a828879854.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url("f4d849075c9b4c0047fc56a828879854.svg#Recoleta Bold") format("svg"); /* iOS 4.1- */
+}
 a{
   text-decoration: none;
 }
@@ -88,6 +96,7 @@ header a{
 h3{
   font-weight: bold;
   letter-spacing: 3px;
+  font-family: "futura-bold";
 }
 
 
