@@ -7,9 +7,16 @@
   url("f4d849075c9b4c0047fc56a828879854.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
   url("f4d849075c9b4c0047fc56a828879854.svg#Recoleta Bold") format("svg"); /* iOS 4.1- */
 }
+a{
+  text-decoration: none;
+}
+a:hover{
+  color: gray;
+  text-decoration: none;
+}
 body{
   padding: 0;
-  overflow: hidden;
+  overflow-x: hidden;
   font-family: "futura";
 }
 .footer{
@@ -75,7 +82,8 @@ header a{
   background: linear-gradient(to top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.8) 100%, rgba(255, 255, 255, 0.5) 100%);
 }*/
 .about {
-  height: 45vh;
+  height: 56vh;
+  background-size: contain;
 }
 h3{
   font-weight: bold;
