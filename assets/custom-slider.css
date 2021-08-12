@@ -57,7 +57,7 @@ body{
   }
 
   .bg_caption {
-    background: #00000040 !important;
+    background: #00000054 !important;
     height: 100% !important;
     width: 100% !important;
     position: absolute;
@@ -66,16 +66,17 @@ body{
     right: 0;
     bottom: 0;
   }
+  /*
   .bg_caption_footer {
     background: linear-gradient(to top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.8) 3%, rgb(255 255 255 / 0%) 10%);
     height: 100%!important;
     width: 100% !important;
     position: absolute;
-    /* top: 0; */
+   
     left: 0;
     right: 0;
     bottom: -1px;
-  }
+  }*/
   .modal_video video {
     width: 100%;
   }

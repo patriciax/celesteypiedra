@@ -1,18 +1,26 @@
+
+@font-face {font-family: "futura";
+  src: url("f4d849075c9b4c0047fc56a828879854.eot"); /* IE9*/
+  src: url("f4d849075c9b4c0047fc56a828879854.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("/Recoleta/RecoletaAlt-Black.woff2") format("woff2"), /* chrome、firefox */
+  url("./fonts/Futura-Light.woff") format("woff"), /* chrome、firefox */
+  url("f4d849075c9b4c0047fc56a828879854.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url("f4d849075c9b4c0047fc56a828879854.svg#Recoleta Bold") format("svg"); /* iOS 4.1- */
+}
 body{
   padding: 0;
   overflow: hidden;
-  font-family: 'Lato', sans-serif;
+  font-family: "futura";
 }
 .footer{
   text-align: center;
-  background: linear-gradient(to top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.8) 4%, rgba(255, 255, 255, 0.5) 10%);
 font-size: .8rem;
 }
 .footer a, .footer p{
   color: #1d1d1dbd;
 }
 .banner{
-  height: 655px!important;
+  height: 100vh!important;
 }
 header{
   position: absolute;
@@ -54,7 +62,7 @@ header a{
 .bg-img {
   background-size: cover;
   background-repeat: no-repeat;
-}
+}/*
 .banner-img:after {
   position: absolute;
   height: 45%;
@@ -65,7 +73,7 @@ header a{
   background: linear-gradient(to top, rgba(255, 255, 255, 1) 0%, rgb(255 255 255 / 39%) 100%, rgba(255, 255, 255, 0.5) 100%);
   object-fit: cover;
   background: linear-gradient(to top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.8) 100%, rgba(255, 255, 255, 0.5) 100%);
-}
+}*/
 .about {
   height: 45vh;
 }
