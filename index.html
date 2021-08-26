@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="assets/css/sm-core-css.css" />
   <link rel="stylesheet" href="assets/css/sm-mint.css" />
   <link rel="stylesheet" href="assets/css/sm-style.css" />
- <!----- 
+  <!----- 
  <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="stylesheet" href="assets/flat-font/flaticon.css">--->
   <link rel="stylesheet" href="assets/font/stylesheet.css" />
@@ -36,37 +36,52 @@
   <link rel="stylesheet" href="assets/sliders/slider-1/fonts/font-awesome/css/font-awesome.css" />
   <link rel="stylesheet" href="assets/sliders/slider-1/css/rs6.css" />
   <link rel="icon" type="image/png" sizes="16x16" href="assets/img/logo.png" />
-<!--------------------------------------->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
-    <!-- REVOLUTION BANNER CSS SETTINGS -->
-<link rel="stylesheet" type="text/css" href="assets/css/revslider.css" media="screen" />
-<link rel="stylesheet" href="assets/css/custom-slider.css">
-<link rel="stylesheet" href="assets/css/custom.css">
-<style>
-  .footer {
-    text-align: center;
-    font-size: .8rem;
-    position: absolute;
-    bottom: 0;
-    z-index: 111;
-    text-align: center;
-    width: 100%;
-}
-.footer a, .footer p {
-    color: #ffffffbd;
-    font-size: 1rem;
-}
-::-webkit-scrollbar-thumb, ::-webkit-scrollbar  {
-display: none;
-}
-</style>
+  <!--------------------------------------->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+  <!-- REVOLUTION BANNER CSS SETTINGS -->
+  <link rel="stylesheet" type="text/css" href="assets/css/revslider.css" media="screen" />
+  <link rel="stylesheet" href="assets/css/custom-slider.css">
+  <link rel="stylesheet" href="assets/css/custom.css">
+  <style>
+    .footer {
+      text-align: center;
+      font-size: .8rem;
+      position: absolute;
+      bottom: 0;
+      z-index: 111;
+      text-align: center;
+      width: 100%;
+    }
+
+    .footer a,
+    .footer p {
+      color: #ffffffbd;
+      font-size: 1rem;
+    }
+
+    ::-webkit-scrollbar-thumb,
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  </style>
 </head>
 
 <body>
+
+  <div class="elipse">
+    <video  autoplay muted>
+      <source src="assets/img/loader.mp4" type="video/mp4">
+      <source src="movie.ogg" type="video/ogg">
+    Your browser does not support the video tag.
+    </video>
+  </div>
+
+
+
   <header class="mextreo-header-area">
-    <div class="container c-fulid-max">
+    <div class="container-fluid c-fulid-max">
       <div class="row">
         <div class="col-4 col-md-4 d-flex">
           <div class="logo-wrapper">
@@ -86,12 +101,42 @@ display: none;
 
                 <ul id="main-menu" class="sm sm-mint">
                   <li>
-                    <a href="nosotros.html">Nosotros</a>
+                    <div class="dropdown">
+                      <button class="btn btn-drop dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Nosotros
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="nosotros.html">SOMOS</a>
+                        <a class="dropdown-item" href="nosotros.html">LO QUE HACEMOS</a>
+                        <a class="dropdown-item" href="nosotros.html">MANIIFIESTO</a>
+                        <a class="dropdown-item" href="equipo.html">EQUIPO</a>
+
+                      </div>
+                    </div>
                   </li>
-                  <li><a href="proyectos.html">Proyectos</a></li>
+
+                  <li>
+                    <div class="dropdown">
+                    <button class="btn btn-drop dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Proyectos
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="proyectos.html">Todos</a>
+
+                        <a class="dropdown-item" href="detail.html">CASA MÍSTIKA</a>
+                        <a class="dropdown-item" href="detail.html">BAHÍA CALIENTE</a>
+                        <a class="dropdown-item" href="detail.html">CASA VELEZ</a>
+                        <a class="dropdown-item" href="detail.html">PROYECTO CORPAMAG</a> </a>
+                        <a class="dropdown-item" href="detail.html">PROYECTO NINA NA </a>
+                        <a class="dropdown-item" href="detail.html">PLAN PARCIAL PERALPEÑA  </a>
+                      </div>
+                    </div>
+                  </li>
                   <li><a href="blog.html">Noticias</a></li>
                   <li>
-                    <a href="contacto.html">Contacto</a>
+                    <a data-toggle="modal" data-target=".contact-popup" class="tes" href="contacto.html">Contacto</a>
                   </li>
                 </ul>
               </nav>
@@ -114,32 +159,28 @@ display: none;
           <!--  SLOT Zoom Horizontal-->
           <li data-index="1" data-transition="slotzoom-horizontal" data-slotamount="5" data-masterspeed="1000"
             data-fsmasterspeed="1000">
-            <img
-              src="assets/img/banner.png"
-              alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg banner-img"
-              data-bgparallax="10" data-no-retina="" />
-              <div class="slider_text_box">
-                <div class="tp-loop-wrap">
-                  <div class="tp-mask-wrap">
-                    <div class=" tp-caption tp-resizeme count" style="z-index: 9999;">
-                   </div>
-                      Brian’s Villa<br>Private Residence
-        
-                    </div>
+            <img src="assets/img/banner.png" alt="" data-bgposition="center center" data-bgfit="cover"
+              data-bgrepeat="no-repeat" class="rev-slidebg banner-img" data-bgparallax="10" data-no-retina="" />
+            <div class="slider_text_box">
+              <div class="tp-loop-wrap">
+                <div class="tp-mask-wrap">
+                  <div class=" tp-caption tp-resizeme count" style="z-index: 9999;">
+                  </div>
+                  Brian’s Villa<br>Private Residence
+
                 </div>
               </div>
-      
-              
+            </div>
+
+
             <div class="bg_caption"></div>
             <div class="bg_caption_footer"></div>
           </li>
           <li data-index="2" data-transition="slotzoom-horizontal" data-slotamount="5" data-masterspeed="1000"
             data-fsmasterspeed="1000">
-            <img
-              src="assets/img/BAHIA CALIENTE.png"
-              alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg banner-img"
-              data-bgparallax="10" data-no-retina="" />
-         
+            <img src="assets/img/BAHIA CALIENTE.png" alt="" data-bgposition="center center" data-bgfit="cover"
+              data-bgrepeat="no-repeat" class="rev-slidebg banner-img" data-bgparallax="10" data-no-retina="" />
+
             <div class="bg_caption"></div>
             <div class="bg_caption_footer"></div>
           </li>
@@ -147,11 +188,13 @@ display: none;
       </div>
     </div>
     <footer class="footer">
-      <p>  COPYRIGHT © 2021 CELESTEYPIEDRA / E-MAIL: <a href="mailto:juliana@celesteypiedra.com">juliana@celesteypiedra.com</a> / TELEFONO: <a href="tel:+573222239933"> (+57) 322 223 99 33</a> / Cra. 4 # 13 –14 Piso 4 Ed. Davivienda
+      <p> COPYRIGHT © 2021 CELESTEYPIEDRA / E-MAIL: <a
+          href="mailto:info@celesteypiedra.com">info@celesteypiedra.com</a> / TELEFONO: <a
+          href="tel:+573222239933"> (+57) 322 223 99 33</a> / Cra. 4 # 13 –14 Piso 4 Ed. Davivienda
       </p>
-      </footer>
+    </footer>
   </section>
-<!-------
+  <!-------
   <div class="side-panel hide">
     <div class="sp-box">
       <div class="sp-close">
@@ -972,86 +1015,161 @@ display: none;
 
   <script src="assets/js/theme.js"></script>
 
- <!----- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>-->
-<!-- REVOLUTION BANNER JS FILES  -->
-<script type="text/javascript" src="assets/js/plugin.min.js"></script>
-<script type="text/javascript" src="assets/js/revslider.min.js"></script>
+  <!----- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>-->
+  <!-- REVOLUTION BANNER JS FILES  -->
+  <script type="text/javascript" src="assets/js/plugin.min.js"></script>
+  <script type="text/javascript" src="assets/js/revslider.min.js"></script>
 
-<script>
-  $(".banner").revolution({
-    sliderType: "standard",
-    sliderLayout: "fullscreen",
-    dottedOverlay: "none",
-    
-    delay: 8000,
-    autoHeight: "on",
-    minHeight: 480,
-    navigation: {
-      keyboardNavigation: "off",
-      keyboard_direction: "horizontal",
-      onHoverStop: "on",
-      mouseScrollNavigation: "off",
-      mouseScrollReverse: "default",
-      touch: {
-        touchenabled: "on",
-        swipe_threshold: 75,
-        swipe_min_touches: 1,
-        swipe_direction: "horizontal",
-        drag_block_vertical: false,
+  <script>
+    $(".tes").hover(function () {
+    $('#popup').modal({
+        show: true,
+        backdrop: false
+    })
+});
+    $(".banner").revolution({
+      sliderType: "standard",
+      sliderLayout: "fullscreen",
+      dottedOverlay: "none",
+
+      delay: 8000,
+      autoHeight: "on",
+      minHeight: 480,
+      navigation: {
+        keyboardNavigation: "off",
+        keyboard_direction: "horizontal",
+        onHoverStop: "on",
+        mouseScrollNavigation: "off",
+        mouseScrollReverse: "default",
+        touch: {
+          touchenabled: "on",
+          swipe_threshold: 75,
+          swipe_min_touches: 1,
+          swipe_direction: "horizontal",
+          drag_block_vertical: false,
+        },
+        bullets: {
+          enable: true,
+          hide_onmobile: true,
+
+          direction: "vertical",
+          h_align: "right",
+          v_align: "center",
+          h_offset: 80,
+          v_offset: 0,
+          space: 27,
+        },
+
       },
-      bullets: {
-        enable: true,
-        hide_onmobile: true,
-
-        direction: "vertical",
-        h_align: "right",
-        v_align: "center",
-        h_offset: 80,
-        v_offset: 0,
-        space: 27,
+      responsiveLevels: [1920, 1199, 991, 768, 480],
+      visibilityLevels: [1920, 960, 991, 768, 480],
+      gridwidth: [1170, 1024, 991, 768, 480],
+      gridheight: [950, 768, 600, 600, 480],
+      lazyType: "none",
+      shadow: 0,
+      spinner: "off",
+      //  asi es sin autoplay, para autoplay cambiar a off, -1 , -1  
+      /*stopLoop: "on",
+      stopAfterLoops: 0,
+      stopAtSlide: 1,*/
+      stopLoop: "off",
+      stopAfterLoops: -1,
+      stopAtSlide: -1,
+      shuffle: "off",
+      autoHeight: "off",
+      fullScreenAutoWidth: "off",
+      fullScreenAlignForce: "off",
+      fullScreenOffsetContainer: "",
+      fullScreenOffset: "",
+      disableProgressBar: "on",
+      hideThumbsOnMobile: "off",
+      hideSliderAtLimit: 0,
+      hideCaptionAtLimit: 0,
+      hideAllCaptionAtLilmit: 0,
+      debugMode: false,
+      fallbacks: {
+        simplifyAll: "off",
+        nextSlideOnWindowFocus: "off",
+        disableFocusListener: false,
       },
+      parallax: {
+        type: "mouse",
+        origo: "slidercenter",
+        speed: 2000,
+        levels: [2, 3, 4, 5, 6, 7, 12, 16, 10, 50],
+      },
+    });
+   
+	setTimeout(function () {
+		$('.elipse').fadeOut(300);
+	}, 3000)
+	
+  </script>
 
-    },
-    responsiveLevels: [1920, 1199, 991, 768, 480],
-    visibilityLevels: [1920, 960, 991, 768, 480],
-    gridwidth: [1170, 1024, 991, 768, 480],
-    gridheight: [950, 768, 600, 600, 480],
-    lazyType: "none",
-    shadow: 0,
-    spinner: "off",
-    //  asi es sin autoplay, para autoplay cambiar a off, -1 , -1  
-    /*stopLoop: "on",
-    stopAfterLoops: 0,
-    stopAtSlide: 1,*/
-       stopLoop: "off",
-          stopAfterLoops: -1,
-          stopAtSlide: -1, 
-    shuffle: "off",
-    autoHeight: "off",
-    fullScreenAutoWidth: "off",
-    fullScreenAlignForce: "off",
-    fullScreenOffsetContainer: "",
-    fullScreenOffset: "",
-    disableProgressBar: "on",
-    hideThumbsOnMobile: "off",
-    hideSliderAtLimit: 0,
-    hideCaptionAtLimit: 0,
-    hideAllCaptionAtLilmit: 0,
-    debugMode: false,
-    fallbacks: {
-      simplifyAll: "off",
-      nextSlideOnWindowFocus: "off",
-      disableFocusListener: false,
-    },
-    parallax: {
-      type: "mouse",
-      origo: "slidercenter",
-      speed: 2000,
-      levels: [2, 3, 4, 5, 6, 7, 12, 16, 10, 50],
-    },
-  });
+  <!-- Modal contacto -->
+  <div class="modal fade contact-popup" id="exampleModalCenter" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Contáctanos</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="grid-contact">
+            <div>
+              <form id="cf" method="POST">
+                <div class="form-group mcfg">
+                  <input type="text" class="form-control m-input" name="name" id="name" placeholder="Nombre*"
+                    onfocus="this.placeholder = ''" onblur="this.placeholder ='Nombre*'">
+                </div>
+                <div class="form-group mcfg">
+                  <input type="text" class="form-control m-input" name="email" id="email" placeholder="Correo electronico  *"
+                    onfocus="this.placeholder = ''" onblur="this.placeholder ='Correo electronico *'">
+                </div>
+                <div class="form-group mcfg">
+                  <textarea rows="4" class="form-control m-input" name="msg" id="msg" placeholder="Mensaje *"
+                    onfocus="this.placeholder =''" onblur="this.placeholder ='Mensaje *'"></textarea>
+                </div>
+                <button type="submit" id="submit" class="m-submit btn-enviar">enviar</button>
+                <div class="col-md-12 text-center">
+                  <div class="cf-msg"></div>
+                </div>
+              </form>
+            </div>
 
-</script>
+            <div>
+
+              <div class="contact-details pl-5" data-aos="fade-up" data-aos-duration="3000">
+                
+                <div class="single-info">
+                  <h5>Address:</h5>
+                  <p>Cra. 4 # 13 –14 Piso 4 Ed. Davivienda</p>
+
+                </div>
+                <div class="single-info">
+                  <h5>Phone:</h5>
+                  <p> (+57) 322 223 99 33 </p>
+
+                </div>
+                <div class="single-info">
+                  <h5>Email:</h5>
+                  <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__"
+                     > info@celesteypiedra.com</a></p>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  
 </body>
 
 </html>
