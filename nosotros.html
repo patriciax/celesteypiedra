@@ -21,7 +21,7 @@
 
   <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css" />
 
-  <link rel="stylesheet" href="assets/css/font-awosome.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css  " />
 
   <link rel="stylesheet" href="assets/flat-font/flaticon.css" />
 
@@ -221,6 +221,17 @@
   </div>
 
   <footer class="footer">
+    <div class="redes redes-page container">
+      <a href="https://www.facebook.com/Celeste-Piedra-109539434706322" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i>
+
+      </a>
+      <a href="https://www.instagram.com/celesteypiedra/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i>
+
+      </a>
+      <a href="https://www.linkedin.com/company/12634750/admin/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i>
+      </a>
+
+    </div>
     <p> COPYRIGHT © 2021 CELESTEYPIEDRA / E-MAIL: <a
         href="mailto:info@celesteypiedra.com">info@celesteypiedra.com</a> / TELEFONO: <a href="tel:+573222239933">
         (+57) 322 223 99 33</a> / Cra. 4 # 13 –14 Piso 4 Ed. Davivienda
@@ -257,6 +268,69 @@
   <!-- REVOLUTION BANNER JS FILES  -->
   <script type="text/javascript" src="assets/js/plugin.min.js"></script>
   <script type="text/javascript" src="assets/js/revslider.min.js"></script>
+   <!-- Modal contacto -->
+   <div class="modal fade contact-popup" id="exampleModalCenter" tabindex="-1" role="dialog"
+   aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+   <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+     <div class="modal-content">
+       <div class="modal-header">
+         <h5 class="modal-title" id="exampleModalLongTitle">Contáctanos</h5>
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+           <span aria-hidden="true">&times;</span>
+         </button>
+       </div>
+       <div class="modal-body">
+         <div class="grid-contact">
+           <div>
+             <form id="cf" method="POST">
+               <div class="form-group mcfg">
+                 <input type="text" class="form-control m-input" name="name" id="name" placeholder="Nombre*"
+                   onfocus="this.placeholder = ''" onblur="this.placeholder ='Nombre*'">
+               </div>
+               <div class="form-group mcfg">
+                 <input type="text" class="form-control m-input" name="email" id="email" placeholder="Correo electronico  *"
+                   onfocus="this.placeholder = ''" onblur="this.placeholder ='Correo electronico *'">
+               </div>
+               <div class="form-group mcfg">
+                 <textarea rows="4" class="form-control m-input" name="msg" id="msg" placeholder="Mensaje *"
+                   onfocus="this.placeholder =''" onblur="this.placeholder ='Mensaje *'"></textarea>
+               </div>
+               <button type="submit" id="submit" class="m-submit btn-enviar">enviar</button>
+               <div class="col-md-12 text-center">
+                 <div class="cf-msg"></div>
+               </div>
+             </form>
+           </div>
+
+           <div>
+
+             <div class="contact-details pl-5" data-aos="fade-up" data-aos-duration="3000">
+               
+               <div class="single-info">
+                 <h5>Address:</h5>
+                 <p>Cra. 4 # 13 –14 Piso 4 Ed. Davivienda</p>
+
+               </div>
+               <div class="single-info">
+                 <h5>Phone:</h5>
+                 <p> (+57) 322 223 99 33 </p>
+
+               </div>
+               <div class="single-info">
+                 <h5>Email:</h5>
+                 <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__"
+                    > info@celesteypiedra.com</a></p>
+
+               </div>
+             </div>
+
+           </div>
+         </div>
+       </div>
+
+     </div>
+   </div>
+ </div>
 </body>
 
 </html>
