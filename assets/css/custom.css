@@ -1739,5 +1739,10 @@ header.mextreo-header-area.nav-fixed img {
   .about-grid {
     grid-template-columns: 100%;
   }
+  .about {
+    height: 78vh;
   
+    background-size: cover;
+    background-position: center;
+}
 }
