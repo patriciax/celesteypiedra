@@ -359,3 +359,14 @@ $(document).ready(function() {
  });
 
  
+ $(function (){
+  $(window).scroll(function(){
+     if ($(this).scrollTop() >= 100) {
+      $('.dropdown-menu').addClass("bg-whithe");
+     } else {
+     $('.dropdown-menu').removeClass("bg-whithe");
+     }
+  
+  
+  });
+});

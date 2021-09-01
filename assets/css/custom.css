@@ -1419,11 +1419,11 @@ section.mextreo-hero.inner .contact-details .single-info h5 {
     height: 30px;
 }
 .slider-for .slick-prev {
-  left: 2rem;
+  left: 8rem;
   z-index: 1;
 }
 .slick-next {
-  left: 5rem;
+  left: 11rem;
 }
 .slick-prev:before {
   content: "\f104";
@@ -1448,7 +1448,7 @@ section.mextreo-hero.inner .contact-details .single-info h5 {
 .icon-expand{
   position: absolute;
   bottom: 20px;
-  right: 20px;
+  right: 8rem;
   border: 2px solid #fff;
   padding: 9px;
   border-radius: 50%;
@@ -1745,4 +1745,8 @@ header.mextreo-header-area.nav-fixed img {
     background-size: cover;
     background-position: center;
 }
+}
+
+.bg-whithe{
+  background: #ffffffd1!important;
 }

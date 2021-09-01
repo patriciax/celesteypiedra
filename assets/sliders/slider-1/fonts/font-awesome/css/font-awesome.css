@@ -605,7 +605,7 @@
 .fa-lemon-o:before {
   content: "\f094";
 }
-.fa-phone:before {
+.fa-Teléfono:before {
   content: "\f095";
 }
 .fa-square-o:before {
@@ -919,7 +919,7 @@
 .fa-tablet:before {
   content: "\f10a";
 }
-.fa-mobile-phone:before,
+.fa-mobile-Teléfono:before,
 .fa-mobile:before {
   content: "\f10b";
 }
@@ -1021,7 +1021,7 @@
 .fa-puzzle-piece:before {
   content: "\f12e";
 }
-.fa-microphone:before {
+.fa-microTeléfono:before {
   content: "\f130";
 }
 .fa-microphone-slash:before {
@@ -2106,7 +2106,7 @@
 .fa-audio-description:before {
   content: "\f29e";
 }
-.fa-volume-control-phone:before {
+.fa-volume-control-Teléfono:before {
   content: "\f2a0";
 }
 .fa-braille:before {
